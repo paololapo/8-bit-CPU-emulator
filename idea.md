@@ -3,6 +3,7 @@
 ### Clock module
 Synch of the operations. 
 In our case will be something similar to a while (while !HLT) loop, printing (or saving into a .txt) the states of all components before the end of each iteration. 
+It is related to the micro-instructions (fetch, exectution) and not to the instruction per se. 
 
 ### Registers
 Three 8-bit registers: A, B, IR. A and B are general-purpose, IR is the instruction register (store the current instruction that's being executed). 
