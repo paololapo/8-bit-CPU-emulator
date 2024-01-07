@@ -135,7 +135,7 @@ Execution 3: Update the registers and flags, and prepare the CPU for the next in
 
 
 
-# **IMPLEMENTAZIONE IN CLASSI**
+# **IMPLEMENTAZIONE IN CLASSI (pseudocodice)**
 ### Micro-instructions implementation
 ```
 #dict of lists of functions, each list is addressed by an opcode
