@@ -1,0 +1,4 @@
+LDA 0x1F
+ADD 0x0B
+OUT
+HLT
