@@ -272,3 +272,23 @@ class Microclock(){
 
 }
 ```
+### clock
+```
+class Clock:
+	def __init__():
+		self.state=0
+		self.on=True
+	def advance(self, how_much):
+		self.state+=how_much
+	def __str__():
+		return self.state
+		
+class Microclock():
+	def __init__(n_time_states):
+		self.state=0
+        self.n_time_states=n_time_states
+	def advance(self, how_much):
+		self.state=(self.state+how_much)%self.n_time_states
+    def __str__():
+		return self.state
+```
