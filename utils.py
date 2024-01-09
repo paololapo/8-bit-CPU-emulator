@@ -1,12 +1,13 @@
-########### FUNCTIONS #############
-
+## FUNCTIONS ##
 
 def binary_to_decimal(binary_string):
-    if binary_string[0] == '1':  # Check if the number is negative
+    # Check if the number is negative
+    if binary_string[0] == '1':  
         # Calculate the two's complement by subtracting 2^n
         return int(binary_string, 2) - 2**len(binary_string)
     else:
         return int(binary_string, 2)
+
 
 def decimal_to_binary(decimal_number, bit_width=8):
     if decimal_number < 0:
@@ -29,8 +30,9 @@ def hex_to_binary(hex_number):
     return binary_number
 
 
-############ CLASSES ##############
+## CLASSES ##
 
+# General purpose register
 class Register:
     def __init__(self):
         self.state = ''
@@ -47,6 +49,7 @@ class Register:
         return f"State: {self.state}"
 
 
+# 8-bit register
 class ByteRegister(Register):
     def __init__(self):
         self.state = '0'*8
@@ -55,6 +58,7 @@ class ByteRegister(Register):
         return f"State: {self.state}"
 
 
+# 4-bit register
 class NibbleRegister(Register):
     def __init__(self):
         self.state = '0'*4
@@ -63,17 +67,15 @@ class NibbleRegister(Register):
         return f"State: {self.state}"
 
 
+# RAM: store both the program and the data: 16 adresses of 8 bits each
 class RAM(Register):
-    """
-    RAM stores both the program and the data. 16 addresses of 8 bits each
-    """
-
     def __init__(self):
         # List of 8-bits registers
         self.state = [ByteRegister() for _ in range(16)]
 
     # Write on the address of the RAM
     def write(self, data, address):
+        
         # Data validation
         assert type(data) is str, 'data type error'
         assert len(data) == 8, 'size error'
@@ -88,25 +90,23 @@ class RAM(Register):
         return "\n".join([f"Address {i}: {register}" for i, register in enumerate(self.state)])
 
 
+# IR: you can access the first and the second nibbles
 class InstructionRegister(ByteRegister):
-    """
-    Register where you can access the first and the second nibbles 
-    """
 
     def readOpCode(self):
+        # Get the first nibble (op-code)
         return self.read()[:4]
     
     def readOperand(self):
+        # Get the second nibble (operand)
         return self.read()[4:]
 
     def __str__(self):
         return f"OpCode: {self.readOpCode()}\nOperand: {self.readOperand()}"
 
 
+# 4-bits Program counter
 class ProgramCounter(NibbleRegister):
-    """
-    4-bits program counter
-    """
 
     # Update the counter
     def advance(self):       
@@ -123,38 +123,50 @@ class ProgramCounter(NibbleRegister):
         return f"Value: {int(self.state, 2)}"
 
     
+# Generic Flag
 class Flag(Register):
+
     def __init__(self, reg):
         self.state = 0
         self.reg=reg
+    
     def update(self):
         self.state=self.state
+    
     def __str__(self):
         return f"State: {self.state}"
 
 
+# Flag minus: sign of the accumulator
 class FlagMinus(Flag):
+
     def update(self):
         if(binary_to_decimal(self.reg.read())<0):
             self.state=1
         else:
             self.state=0
+
     def read(self):
         self.update(self)
         return self.state
 
 
+# Flag Carry: carry of the operation
 class FlagCarry(Flag): 
+
     def update(self):
         if binary_to_decimal(self.reg.a.read())+binary_to_decimal(self.reg.b.read()) > pow(2,8)-1:
             self.state=1
         else:
             self.state=0
+
     def read(self):
         return self.state
 
 
+# Flag Zero: check if the accumulator is zero
 class FlagZero(Flag): 
+
     def update(self):
         if(binary_to_decimal(self.reg.read())==0):
             self.state=1
@@ -162,24 +174,27 @@ class FlagZero(Flag):
             self.state=0
 
 
+# ALU: 8-bit temporary register
 class ALU(ByteRegister):
-    """
-    The logic of the CPU
-    """
+
     def __init__(self, aRegister, bRegister):
         self.a = aRegister
         self.b = bRegister
         self.state='0'*8
 
+    # Possible operation: add, sub
     def update(self, mode='add'):
         value_a, value_b=binary_to_decimal(self.a.read()), binary_to_decimal(self.b.read())
+        
         if(mode=='add'):
             result=value_a+value_b
+        
         elif(mode=='sub'):
             result=value_a-value_b
         self.state=decimal_to_binary(result)[0:8] 
 
     def read(self, mode='add'):
+        # Update the state before the reading operation
         self.update(mode)
         return self.state
         
@@ -188,6 +203,7 @@ class ALU(ByteRegister):
         return self.state
 
 
+# Clock and log file
 class Clock:
     def __init__(self, cpu, log_file_path="log.txt"):
         self.state = 0
@@ -212,6 +228,7 @@ class Clock:
         return str(self.state)
     
 
+# RingCounter: counter of the microinstructions
 class RingCounter():
 	def __init__(self, n_time_states):
 		self.state=0
