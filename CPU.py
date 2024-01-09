@@ -230,13 +230,13 @@ class CPU:
     # Define the printable state of the CPU
     def __str__(self):
         if self.clock.state == 0:
-            snapshot = f"Clock: {self.clock.__str__()}\nRing Counter: {self.ringCounter.__str__()}\n Program Counter: {self.programCounter.__str__()}\n" \
+            snapshot = f"Clock: {self.clock.__str__()}\nRing Counter: {self.ringCounter.__str__()}\nProgram Counter: {self.programCounter.__str__()}\n" \
                     f"Memory Address Register: {self.memoryAddressRegister.__str__()}\nA Register: {self.aRegister.__str__()}\n" \
                     f"B Register: {self.bRegister.__str__()}\nInstruction Register: {self.instructionRegister.__str__()}\n" \
                     f"Flag Z: {self.flagZero.__str__()}\nFlag C: {self.flagCarry.__str__()}\nRAM:\n{self.ram.__str__()}\n"
         
         else:
-            snapshot = f"Clock: {self.clock.__str__()}\nRing Counter: {self.ringCounter.__str__()}\n Program Counter: {self.programCounter.__str__()}\n" \
+            snapshot = f"Clock: {self.clock.__str__()}\nRing Counter: {self.ringCounter.__str__()}\nProgram Counter: {self.programCounter.__str__()}\n" \
                     f"Memory Address Register: {self.memoryAddressRegister.__str__()}\nA Register: {self.aRegister.__str__()}\n" \
                     f"B Register: {self.bRegister.__str__()}\nInstruction Register: {self.instructionRegister.__str__()}\n" \
                     f"Flag Z: {self.flagZero.__str__()}\nFlag C: {self.flagCarry.__str__()}\n"
