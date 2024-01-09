@@ -172,16 +172,16 @@ class ALU(ByteRegister):
         self.state='0'*8
 
     def update(self, mode='add'):
-        value_a, value_b=binary_to_decimal(self.a), binary_to_decimal(self.b)
+        value_a, value_b=binary_to_decimal(self.a.read()), binary_to_decimal(self.b.read())
         if(mode=='add'):
             result=value_a+value_b
         elif(mode=='sub'):
             result=value_a-value_b
-        self.state=result[0:8] 
+        self.state=decimal_to_binary(result)[0:8] 
 
     def read(self, mode='add'):
         self.update(mode)
-        return decimal_to_binary(self.state)
+        return self.state
         
     def __str__(self):
         self.read()
