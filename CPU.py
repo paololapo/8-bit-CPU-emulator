@@ -216,7 +216,8 @@ class CPU:
 
                 # Make the clock click
                 self.advance_clock()
-                
+                if self.ringCounter.read()==0:
+			break
                 # Abort the run after some iteration (mainly for debugging purpouses)
                 if self.clock.state > threshold:
                     self.clock.on = False
