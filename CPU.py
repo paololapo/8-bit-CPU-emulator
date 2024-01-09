@@ -173,10 +173,11 @@ class CPU:
                     
                 elif not line[0].isalpha():
                     # Split the line into instruction and hexadecimal number
-
                     combined_data = hex_to_binary(line).zfill(8)
+                
                 else:
                     continue
+                
                 # Append combined data to RAM using line number as address
                 self.ram.write(combined_data, line_number)
 
