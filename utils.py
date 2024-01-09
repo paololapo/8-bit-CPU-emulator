@@ -195,8 +195,17 @@ class Clock:
         self.log_file_path = log_file_path
 
     def advance(self, cpu):
-        with open(self.log_file_path, "a") as log_file:
-            log_file.write(f"{cpu}\n")
+        # Save the state in the log file
+        if self.state == 0:
+            # Create the file at first
+            with open(self.log_file_path, "w") as log_file:
+                log_file.write(f"{cpu}\n")
+        else: 
+            # Update the file
+            with open(self.log_file_path, "a") as log_file:
+                log_file.write(f"{cpu}\n")
+            
+        # Make the clock click
         self.state += 1
 
     def __str__(self):

@@ -216,8 +216,12 @@ class CPU:
 
                 # Make the clock click
                 self.advance_clock()
+
+                # Exit execution if cycle ended
+                # This allows to implement also instructions with more than 6 time states
                 if self.ringCounter.read()==0:
-			break
+                    break
+
                 # Abort the run after some iteration (mainly for debugging purpouses)
                 if self.clock.state > threshold:
                     self.clock.on = False

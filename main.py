@@ -1,5 +1,5 @@
 from utils import *
-from cpu import *
+from CPU import *
 
 cpu = CPU()
 cpu.load("file.txt")
