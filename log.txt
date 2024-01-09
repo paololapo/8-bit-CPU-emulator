@@ -1,6 +1,6 @@
 Clock: 0
 Ring Counter: 0
- Program Counter: Value: 0
+Program Counter: Value: 0
 Memory Address Register: State: 0000
 A Register: State: 00000000
 B Register: State: 00000000
@@ -9,13 +9,13 @@ Operand: 0000
 Flag Z: State: 0
 Flag C: State: 0
 RAM:
-Address 0: State: 00000011
-Address 1: State: 00010011
-Address 2: State: 11110000
-Address 3: State: 00000100
-Address 4: State: 00000000
-Address 5: State: 00000000
-Address 6: State: 00000000
+Address 0: State: 10110001
+Address 1: State: 00010110
+Address 2: State: 11100000
+Address 3: State: 01110111
+Address 4: State: 01010001
+Address 5: State: 11110000
+Address 6: State: 00000001
 Address 7: State: 00000000
 Address 8: State: 00000000
 Address 9: State: 00000000
@@ -28,166 +28,1101 @@ Address 15: State: 00000000
 
 Clock: 1
 Ring Counter: 1
- Program Counter: Value: 0
+Program Counter: Value: 0
 Memory Address Register: State: 0000
 A Register: State: 00000000
 B Register: State: 00000000
-Instruction Register: OpCode: 0000
-Operand: 0011
+Instruction Register: OpCode: 1011
+Operand: 0001
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 2
 Ring Counter: 2
- Program Counter: Value: 1
+Program Counter: Value: 1
 Memory Address Register: State: 0000
 A Register: State: 00000000
 B Register: State: 00000000
-Instruction Register: OpCode: 0000
-Operand: 0011
+Instruction Register: OpCode: 1011
+Operand: 0001
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 3
 Ring Counter: 3
- Program Counter: Value: 1
-Memory Address Register: State: 0011
-A Register: State: 00000000
+Program Counter: Value: 1
+Memory Address Register: State: 0000
+A Register: State: 00000001
 B Register: State: 00000000
-Instruction Register: OpCode: 0000
-Operand: 0011
+Instruction Register: OpCode: 1011
+Operand: 0001
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 4
 Ring Counter: 4
- Program Counter: Value: 1
-Memory Address Register: State: 0011
-A Register: State: 00000100
+Program Counter: Value: 1
+Memory Address Register: State: 0000
+A Register: State: 00000001
 B Register: State: 00000000
-Instruction Register: OpCode: 0000
-Operand: 0011
+Instruction Register: OpCode: 1011
+Operand: 0001
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 5
 Ring Counter: 5
- Program Counter: Value: 1
-Memory Address Register: State: 0011
-A Register: State: 00000100
+Program Counter: Value: 1
+Memory Address Register: State: 0000
+A Register: State: 00000001
 B Register: State: 00000000
-Instruction Register: OpCode: 0000
-Operand: 0011
+Instruction Register: OpCode: 1011
+Operand: 0001
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 6
 Ring Counter: 0
- Program Counter: Value: 1
+Program Counter: Value: 1
 Memory Address Register: State: 0001
-A Register: State: 00000100
+A Register: State: 00000001
 B Register: State: 00000000
-Instruction Register: OpCode: 0000
-Operand: 0011
+Instruction Register: OpCode: 1011
+Operand: 0001
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 7
 Ring Counter: 1
- Program Counter: Value: 1
+Program Counter: Value: 1
 Memory Address Register: State: 0001
-A Register: State: 00000100
+A Register: State: 00000001
 B Register: State: 00000000
 Instruction Register: OpCode: 0001
-Operand: 0011
+Operand: 0110
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 8
 Ring Counter: 2
- Program Counter: Value: 2
+Program Counter: Value: 2
 Memory Address Register: State: 0001
-A Register: State: 00000100
+A Register: State: 00000001
 B Register: State: 00000000
 Instruction Register: OpCode: 0001
-Operand: 0011
+Operand: 0110
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 9
 Ring Counter: 3
- Program Counter: Value: 2
-Memory Address Register: State: 0011
-A Register: State: 00000100
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000001
 B Register: State: 00000000
 Instruction Register: OpCode: 0001
-Operand: 0011
+Operand: 0110
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 10
 Ring Counter: 4
- Program Counter: Value: 2
-Memory Address Register: State: 0011
-A Register: State: 00000100
-B Register: State: 00000100
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000001
+B Register: State: 00000001
 Instruction Register: OpCode: 0001
-Operand: 0011
+Operand: 0110
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 11
 Ring Counter: 5
- Program Counter: Value: 2
-Memory Address Register: State: 0011
-A Register: State: 00001000
-B Register: State: 00000100
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000010
+B Register: State: 00000001
 Instruction Register: OpCode: 0001
-Operand: 0011
+Operand: 0110
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 12
 Ring Counter: 0
- Program Counter: Value: 2
+Program Counter: Value: 2
 Memory Address Register: State: 0010
-A Register: State: 00001000
-B Register: State: 00000100
+A Register: State: 00000010
+B Register: State: 00000001
 Instruction Register: OpCode: 0001
-Operand: 0011
+Operand: 0110
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 13
 Ring Counter: 1
- Program Counter: Value: 2
+Program Counter: Value: 2
 Memory Address Register: State: 0010
-A Register: State: 00001000
-B Register: State: 00000100
-Instruction Register: OpCode: 1111
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
 Operand: 0000
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 14
 Ring Counter: 2
- Program Counter: Value: 3
+Program Counter: Value: 3
 Memory Address Register: State: 0010
-A Register: State: 00001000
-B Register: State: 00000100
-Instruction Register: OpCode: 1111
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
 Operand: 0000
 Flag Z: State: 0
 Flag C: State: 0
 
 Clock: 15
 Ring Counter: 3
- Program Counter: Value: 3
+Program Counter: Value: 3
 Memory Address Register: State: 0010
-A Register: State: 00001000
-B Register: State: 00000100
-Instruction Register: OpCode: 1111
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
 Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 16
+Ring Counter: 4
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 17
+Ring Counter: 5
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 18
+Ring Counter: 0
+Program Counter: Value: 3
+Memory Address Register: State: 0011
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 19
+Ring Counter: 1
+Program Counter: Value: 3
+Memory Address Register: State: 0011
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 20
+Ring Counter: 2
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 21
+Ring Counter: 3
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 22
+Ring Counter: 4
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 23
+Ring Counter: 5
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 24
+Ring Counter: 0
+Program Counter: Value: 4
+Memory Address Register: State: 0100
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 25
+Ring Counter: 1
+Program Counter: Value: 4
+Memory Address Register: State: 0100
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 26
+Ring Counter: 2
+Program Counter: Value: 5
+Memory Address Register: State: 0100
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 27
+Ring Counter: 3
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 28
+Ring Counter: 4
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 29
+Ring Counter: 5
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 30
+Ring Counter: 0
+Program Counter: Value: 1
+Memory Address Register: State: 0001
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 31
+Ring Counter: 1
+Program Counter: Value: 1
+Memory Address Register: State: 0001
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 32
+Ring Counter: 2
+Program Counter: Value: 2
+Memory Address Register: State: 0001
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 33
+Ring Counter: 3
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 34
+Ring Counter: 4
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000010
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 35
+Ring Counter: 5
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 36
+Ring Counter: 0
+Program Counter: Value: 2
+Memory Address Register: State: 0010
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 37
+Ring Counter: 1
+Program Counter: Value: 2
+Memory Address Register: State: 0010
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 38
+Ring Counter: 2
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 39
+Ring Counter: 3
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 40
+Ring Counter: 4
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 41
+Ring Counter: 5
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 42
+Ring Counter: 0
+Program Counter: Value: 3
+Memory Address Register: State: 0011
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 43
+Ring Counter: 1
+Program Counter: Value: 3
+Memory Address Register: State: 0011
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 44
+Ring Counter: 2
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 45
+Ring Counter: 3
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 46
+Ring Counter: 4
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 47
+Ring Counter: 5
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 48
+Ring Counter: 0
+Program Counter: Value: 4
+Memory Address Register: State: 0100
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 49
+Ring Counter: 1
+Program Counter: Value: 4
+Memory Address Register: State: 0100
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 50
+Ring Counter: 2
+Program Counter: Value: 5
+Memory Address Register: State: 0100
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 51
+Ring Counter: 3
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 52
+Ring Counter: 4
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 53
+Ring Counter: 5
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 54
+Ring Counter: 0
+Program Counter: Value: 1
+Memory Address Register: State: 0001
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 55
+Ring Counter: 1
+Program Counter: Value: 1
+Memory Address Register: State: 0001
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 56
+Ring Counter: 2
+Program Counter: Value: 2
+Memory Address Register: State: 0001
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 57
+Ring Counter: 3
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 58
+Ring Counter: 4
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000011
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 59
+Ring Counter: 5
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 60
+Ring Counter: 0
+Program Counter: Value: 2
+Memory Address Register: State: 0010
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 61
+Ring Counter: 1
+Program Counter: Value: 2
+Memory Address Register: State: 0010
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 62
+Ring Counter: 2
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 63
+Ring Counter: 3
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 64
+Ring Counter: 4
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 65
+Ring Counter: 5
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 66
+Ring Counter: 0
+Program Counter: Value: 3
+Memory Address Register: State: 0011
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 67
+Ring Counter: 1
+Program Counter: Value: 3
+Memory Address Register: State: 0011
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 68
+Ring Counter: 2
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 69
+Ring Counter: 3
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 70
+Ring Counter: 4
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 71
+Ring Counter: 5
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 72
+Ring Counter: 0
+Program Counter: Value: 4
+Memory Address Register: State: 0100
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 73
+Ring Counter: 1
+Program Counter: Value: 4
+Memory Address Register: State: 0100
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 74
+Ring Counter: 2
+Program Counter: Value: 5
+Memory Address Register: State: 0100
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 75
+Ring Counter: 3
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 76
+Ring Counter: 4
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 77
+Ring Counter: 5
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 78
+Ring Counter: 0
+Program Counter: Value: 1
+Memory Address Register: State: 0001
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 79
+Ring Counter: 1
+Program Counter: Value: 1
+Memory Address Register: State: 0001
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 80
+Ring Counter: 2
+Program Counter: Value: 2
+Memory Address Register: State: 0001
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 81
+Ring Counter: 3
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 82
+Ring Counter: 4
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000100
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 83
+Ring Counter: 5
+Program Counter: Value: 2
+Memory Address Register: State: 0110
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 84
+Ring Counter: 0
+Program Counter: Value: 2
+Memory Address Register: State: 0010
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0001
+Operand: 0110
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 85
+Ring Counter: 1
+Program Counter: Value: 2
+Memory Address Register: State: 0010
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 86
+Ring Counter: 2
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 87
+Ring Counter: 3
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 88
+Ring Counter: 4
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 89
+Ring Counter: 5
+Program Counter: Value: 3
+Memory Address Register: State: 0010
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 90
+Ring Counter: 0
+Program Counter: Value: 3
+Memory Address Register: State: 0011
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 1110
+Operand: 0000
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 91
+Ring Counter: 1
+Program Counter: Value: 3
+Memory Address Register: State: 0011
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 92
+Ring Counter: 2
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 93
+Ring Counter: 3
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 94
+Ring Counter: 4
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 95
+Ring Counter: 5
+Program Counter: Value: 4
+Memory Address Register: State: 0011
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 96
+Ring Counter: 0
+Program Counter: Value: 4
+Memory Address Register: State: 0100
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0111
+Operand: 0111
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 97
+Ring Counter: 1
+Program Counter: Value: 4
+Memory Address Register: State: 0100
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 98
+Ring Counter: 2
+Program Counter: Value: 5
+Memory Address Register: State: 0100
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 99
+Ring Counter: 3
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
+Flag Z: State: 0
+Flag C: State: 0
+
+Clock: 100
+Ring Counter: 4
+Program Counter: Value: 1
+Memory Address Register: State: 0100
+A Register: State: 00000101
+B Register: State: 00000001
+Instruction Register: OpCode: 0101
+Operand: 0001
 Flag Z: State: 0
 Flag C: State: 0
 
