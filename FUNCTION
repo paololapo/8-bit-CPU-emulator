@@ -4,7 +4,12 @@ mnemo_op_code = {
     "ADD": "0001",
     "SUB": "0010",
     "OUT": "1110",
-    "HLT": "1111"
+    "HLT": "1111",
+    "STA": "1010",
+    "LDI": "1011",
+    "JMP": "0101",
+    "JC" : "0111",
+    "JZ" : "1001"
 }
 
 op_code_mnemo = {
@@ -12,7 +17,12 @@ op_code_mnemo = {
     '0001' : 'ADD',
     '0010' : 'SUB',
     '1110' : 'OUT',
-    '1111' : 'HLT'
+    '1111' : 'HLT',
+    "1010" : "STA",
+    "1011" : "LDI",
+    "0101" : "JMP" ,
+    "0111" : "JC" ,
+    "1001" : "JZ"
 }
 
 def hex_to_binary(hex_number):
