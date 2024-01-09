@@ -75,8 +75,10 @@ def old_load(file_path, ram_instance):
                 
             elif not line[0].isalpha():
                 # Split the line into instruction and hexadecimal number
-
-                combined_data = hex_to_binary(line).zfill(8)
+                if line == "0x0":
+                        combined_data = "00000000"
+                else:
+                    combined_data = hex_to_binary(line).zfill(8)
             else:
                 continue
             # Append combined data to RAM using line number as address
