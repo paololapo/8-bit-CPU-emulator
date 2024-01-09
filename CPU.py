@@ -18,6 +18,7 @@ class CPU:
         self.flagCarry=FlagCarry(self.alu)
 
 
+    # Functions: the core of the CPU
     def bus(self, reg1, reg2):
         # Copy the content of the register reg1 into reg2
         self.advance_clock()
@@ -90,9 +91,6 @@ class CPU:
     def clock_off(self):
         # Turn off the clock, abort the run
         self.clock.on = False
-    def clock_off(cpu):
-        # Turn off the clock, abort the run
-        cpu.clock.on=False
 
 
     # Define the microinstructions set of every instruction
