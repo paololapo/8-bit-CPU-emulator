@@ -146,7 +146,7 @@ class FlagMinus(Flag):
 
 class FlagCarry(Flag): 
     def update(self):
-        if binary_to_decimal(self.reg.a)+binary_to_decimal(self.reg.b2) > pow(2,8)-1:
+        if binary_to_decimal(self.reg.a.read())+binary_to_decimal(self.reg.b.read()) > pow(2,8)-1:
             self.state=1
         else:
             self.state=0
