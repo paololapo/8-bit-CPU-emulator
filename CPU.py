@@ -47,7 +47,7 @@ class CPU:
     def a_to_ram(self):
         # Copy the content of the register A into the RAM
         address = binary_to_decimal(self.memoryAddressRegister.read())
-        self.ram.write(self.aRegister, address)
+        self.ram.write(self.aRegister.read(), address)
 
     def a_to_terminal(self):
         # Print the state of the register A
