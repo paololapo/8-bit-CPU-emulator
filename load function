@@ -29,7 +29,7 @@ def hex_to_binary(hex_number):
     # remove the 0x if present
     hex_number = hex_number.lstrip("0x")
 
-    # Converti the number in binary and add zeros if necessary
+    # Convert the number to binary and add zeros if necessary
     binary_number = bin(int(hex_number, 16))[2:].zfill(4)[:4]
 
     return binary_number
@@ -54,7 +54,7 @@ def old_load(file_path, ram_instance):
                 parts = line.split()
                 
                 if len(parts) == 1:
-                    # Convert instruction to op code
+                    # Convert menomonics of instruction to op code
                     op_code = convert_mnemo_op_code(line)
                     combined_data = op_code + "0000"
                     
@@ -62,7 +62,7 @@ def old_load(file_path, ram_instance):
                 if len(parts) == 2:
                     instruction = parts[0]
                     hex_number = parts[1]
-                    # Convert instruction to op code
+                    # Convert mnemonics of instruction to op code
                     op_code = convert_mnemo_op_code(instruction)
                     if hex_number == "0x0":
                         binary_number = "0000"
