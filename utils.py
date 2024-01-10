@@ -20,12 +20,12 @@ def decimal_to_binary(decimal_number, bit_width=8):
     return binary_string.zfill(bit_width)
 
 
-def hex_to_binary(hex_number):
+def hex_to_binary(hex_number, n_bits):
     # remove the 0x if present
     hex_number = hex_number.lstrip("0x")
 
     # Converti the number in binary and add zeros if necessary
-    binary_number = bin(int(hex_number, 16))[2:].zfill(4)[:4]
+    binary_number = bin(int(hex_number, 16))[2:].zfill(n_bits)[:n_bits]
 
     return binary_number
 

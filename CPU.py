@@ -170,7 +170,7 @@ class CPU:
                             binary_number = "0000"
                         else:
                             # Extract the hexadecimal number from the target line
-                            binary_number = hex_to_binary(hex_number)
+                            binary_number = hex_to_binary(hex_number, 4)
                         # Combine op code and binary number
                         combined_data = op_code + binary_number
                         
@@ -180,7 +180,7 @@ class CPU:
                     if line == "0x0" or line == "0x00":
                             combined_data = "00000000"
                     else:
-                        combined_data = hex_to_binary(line).zfill(8)
+                        combined_data = hex_to_binary(line, 8)
                 else:
                     continue
                 # Append combined data to RAM using line number as address
