@@ -1,4 +1,4 @@
-## FUNCTIONS ##
+i## FUNCTIONS ##
 
 def binary_to_decimal(binary_string):
     # Check if the number is negative
@@ -90,7 +90,7 @@ class RAM(Register):
         return "\n".join([f"Address {i}: {register}" for i, register in enumerate(self.state)])
 
 
-# IR: you can access the first and the second nibbles
+# IR: you can access the first and the second nibble
 class InstructionRegister(ByteRegister):
 
     def readOpCode(self):
@@ -228,7 +228,7 @@ class Clock:
         return str(self.state)
     
 
-# RingCounter: counter of the microinstructions
+# RingCounter: periodic counter to control the execution of microinstructions
 class RingCounter():
 	def __init__(self, n_time_states):
 		self.state=0
