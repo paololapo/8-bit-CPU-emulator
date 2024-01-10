@@ -3,4 +3,4 @@ from CPU import *
 
 cpu = CPU()
 cpu.load("file.txt")
-cpu.run(100)
+cpu.run()

@@ -1,4 +1,4 @@
-i## FUNCTIONS ##
+## FUNCTIONS ##
 
 def binary_to_decimal(binary_string):
     # Check if the number is negative

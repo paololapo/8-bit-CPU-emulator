@@ -160,29 +160,29 @@ class CPU:
                         op_code = self.convert_mnemo_op_code(line)
                         combined_data = op_code + "0000"
                         
+                    
                     if len(parts) == 2:
                         instruction = parts[0]
-	                hex_number = parts[1]
-	                # Convert instruction to op code
-	                op_code = convert_mnemo_op_code(instruction)
-	                if hex_number == "0x0":
-	                	binary_number = "0000"
-	        	else:
-	                	# Extract the hexadecimal number from the target line
-	                	binary_number = hex_to_binary(hex_number)
-	                # Combine op code and binary number
-	                combined_data = op_code + binary_number
-                    
+                        hex_number = parts[1]
+                        # Convert instruction to op code
+                        op_code = self.convert_mnemo_op_code(instruction)
+                        if hex_number == "0x0":
+                            binary_number = "0000"
+                        else:
+                            # Extract the hexadecimal number from the target line
+                            binary_number = hex_to_binary(hex_number)
+                        # Combine op code and binary number
+                        combined_data = op_code + binary_number
+                        
                     
                 elif not line[0].isalpha():
                     # Split the line into instruction and hexadecimal number
-                	if line == "0x0":
-                        	combined_data = "00000000"
-                	else:
-                    		combined_data = hex_to_binary(line).zfill(8
+                    if line == "0x0" or line == "0x00":
+                            combined_data = "00000000"
+                    else:
+                        combined_data = hex_to_binary(line).zfill(8)
                 else:
                     continue
-                
                 # Append combined data to RAM using line number as address
                 self.ram.write(combined_data, line_number)
 
@@ -195,7 +195,7 @@ class CPU:
 
 
     # Function to execute the program 
-    def run(self, threshold=100):
+    def run(self, threshold=1000):
         # Turn on the clock
         self.clock.on = True
 
