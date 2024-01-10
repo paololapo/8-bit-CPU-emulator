@@ -172,6 +172,9 @@ class FlagZero(Flag):
             self.state=1
         else:
             self.state=0
+    def read(self):
+        self.update()
+        return self.state
 
 
 # ALU: 8-bit temporary register
