@@ -234,7 +234,6 @@ class CPU:
                     break
 
     # Define the printable state of the CPU
-    # Define the printable state of the CPU
     def __str__(self):
         if self.clock.state == 0:
             snapshot = f"Clock: {self.clock.__str__()}\nRing Counter: {self.ringCounter.__str__()}\nProgram Counter: {self.programCounter.__str__()}\n" \
