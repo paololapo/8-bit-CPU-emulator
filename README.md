@@ -1,7 +1,7 @@
 # 8-bit CPU emulator
 ### The context
 The final project for the 'Management and Analysis of Physics Dataset (MOD. A)' course in the 'Physics of Data' master program, University of Padua. <br>
-Group 7: <a href=https://github.com/paololapo> Paolo Lapo Cerni </a>, <a href=https://github.com/emanuele-quaglio> Emanuele Quaglio </a>, <a href=https://github.com/LorenzoVigorelli> Lorenzo Vigorelli </a>
+Authors: <a href=https://github.com/paololapo> Paolo Lapo Cerni </a>, <a href=https://github.com/emanuele-quaglio> Emanuele Quaglio </a>, <a href=https://github.com/LorenzoVigorelli> Lorenzo Vigorelli </a>
 ### The project
 A Python object-oriented high-level emulator for a simple 8-bit CPU, inspired by the <a href=https://eater.net/8bit/> project of Ben Eater </a>. <br>
 The code is organized into three different files:
